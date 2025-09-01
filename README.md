@@ -2,6 +2,7 @@
 A Python tool to check file signatures against extensions.  
 Helps detect suspicious or potentially malicious files by comparing actual file headers with their claimed extensions.
 
+<img width="671" height="339" alt="Image" src="https://github.com/user-attachments/assets/e340d210-a4ee-4d34-96d6-c1b00716c870" />
 ---
 
 ## Features
