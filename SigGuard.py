@@ -19,14 +19,13 @@ def check_file(file_path, signatures):
     sig = get_file_signature(file_path)
 
     matched_ext = None
-    # Collect all matches
     matched_extensions = []
     for extension, sig_list in signatures.items():
         for s in sig_list:
             if sig.startswith(s):
                 matched_extensions.append(extension)
 
-    # Prefer exact match with extension
+    
     if ext in matched_extensions:
         matched_ext = ext
     elif matched_extensions:
@@ -39,7 +38,7 @@ def check_file(file_path, signatures):
 
     if ext and matched_ext and ext != matched_ext:
         print("⚠️  Warning: Extension and signature do not match!")
-        print("   → Please scan this file with VirusTotal.\n")
+        print("   → Please scan this file with VirusTotal or Anyother Platform You Like.\n")
     else:
         print("✅ File looks consistent.\n")
 
@@ -58,4 +57,5 @@ if __name__ == "__main__":
         check_file(file_path, signatures)
     else:
         print("❌ File does not exist. Please provide a valid path.")
+
 
