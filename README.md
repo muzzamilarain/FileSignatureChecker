@@ -14,7 +14,7 @@ Helps detect suspicious or potentially malicious files by comparing actual file 
 
 ---
 
-## Installation
+## Installation / Usage
 
 1. Clone the repository:
 
