@@ -1,6 +1,14 @@
 import os
 import sys
 import json
+from pyfiglet import figlet_format
+from termcolor import colored
+
+print(colored(figlet_format("SigGuard", font="slant"), "red"))
+print(colored("file extensions can lie, but signatures don’t.... ... ...", "yellow"))
+print(colored(figlet_format("By Muzzamil Arain", font="digital"),"red"))
+print(colored("LinkedIn: muzzamil-sadiq-7195b2258\t \t Github: github.com/muzzamilarain\n" , "yellow"))
+
 
 def get_file_signature(file_path, length=8):
     with open(file_path, "rb") as f:
@@ -50,3 +58,4 @@ if __name__ == "__main__":
         check_file(file_path, signatures)
     else:
         print("❌ File does not exist. Please provide a valid path.")
+
