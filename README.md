@@ -1,4 +1,4 @@
-# FileSignatureChecker
+# SigGuard
 A Python tool to check file signatures against extensions.  
 Helps detect suspicious or potentially malicious files by comparing actual file headers with their claimed extensions.
 
